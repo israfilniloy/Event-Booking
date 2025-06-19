@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    font-size: 1.5em;
+    font-family: "Brush Script MT", cursive;
+    color: #4f46e5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  header {
+    background-color: rgb(255, 255, 255);
+    height: 72px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  nav li {
+    list-style-type: none;
+    display: inline;
+    font-family: sans-serif;
+    margin-right: 5px;
+  }
+  header a {
+    text-decoration: none;
+    color: #6e6d74;
+    padding: 10px;
+    font-size: 17.5px;
+  }

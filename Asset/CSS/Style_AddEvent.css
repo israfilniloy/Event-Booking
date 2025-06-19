@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, "Segoe UI", "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*Header Section*/
+.logo {
+  font-size: 1.8em;
+  font-family: "Brush Script MT", cursive;
+  color: #4f46e5;
+  margin-right: 15px;
+}
+
+header {
+  background-color: #fff;
+  height: 72px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header a {
+  text-decoration: none;
+  color: #6e6d74;
+  padding: 10px;
+  font-size: 17.5px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #4f46e5;
+}
+#ProfileContainer a span {
+  margin-left: 10px;
+}
+.ri-user-3-line {
+  font-size: 23px;
+}
+.GrayTxt {
+  color: #909091;
+  font-size: 16px;
+}
+/* Header Section End */
+
+/* Nav  Start*/
+aside {
+  position: fixed;
+}
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+li {
+  padding: 10px 0px;
+}
+li span {
+  color: #909091;
+}
+ul a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #8b8988;
+  padding: 10px;
+  font-size: 17.5px;
+  transition: color 0.3s ease;
+}
+
+li:hover a,
+li:hover span {
+  color: #4f46e5;
+}
+#Selected_Page a,
+#Selected_Page span {
+  color: #4f46e5;
+}
+/* nav End */
+
+/* Main Section Start */
+main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 30px;
+}
+#asideSection {
+  padding: 20px 40px;
+}
+#mainContent {
+  margin-right: 50px;
+  padding: 20px 30px;
+  background-color: #fffefbeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.347);
+}
+#mainContent p {
+  color: #ffffff;
+}
+/* main Content area start */
+
+#AddEventHeader {
+  background-color: #4f46e5;
+  border-radius: 15px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#AddEventFormContainer {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+#AddEventFormContainer:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#AddEventFormContainer form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.formGroup span {
+  color: #4f46e5;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.formGroup label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4f46e5;
+  font-size: 14px;
+  color: #6e6d74;
+  background-color: #fff;
+}
+#eventCategory option {
+  font-weight: 550;
+}
+#eventVenue option {
+  font-weight: 550;
+}
+#PromoCode option {
+  font-weight: 550;
+}
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#submitBtn {
+  grid-column: span 2;
+  padding: 10px 12px;
+  font-size: 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #3730a3;
+}
+
+#errorMessage {
+  color: #ff0000;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,123 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .verify-container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 420px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      text-align: center;
+    }
+
+    .back-btn {
+      position: absolute;
+      left: 20px;
+      top: 15px;
+      font-size: 22px;
+      color: #999;
+      cursor: pointer;
+    }
+
+    .email-img {
+      width: 70px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .verify-container p {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .otp-inputs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .otp-inputs input {
+      width: 50px;
+      height: 55px;
+      font-size: 24px;
+      text-align: center;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .otp-inputs input:focus {
+      border-color: #f9a826;
+      box-shadow: 0 0 0 2px rgba(255, 181, 55, 0.3);
+    }
+
+    .change-email {
+      font-size: 13px;
+      margin-bottom: 25px;
+    }
+
+    .change-email a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .verify-btn {
+      width: 100%;
+      padding: 14px;
+      background-color: #4f46e5;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .verify-btn:hover {
+      background-color: #4f46e5;
+    }
+
+    .resend-link {
+      font-size: 13px;
+      margin-top: 15px;
+      display: inline-block;
+      color: #333;
+    }
+
+    .resend-link a {
+      text-decoration: underline;
+      color: #4f46e5;
+    }
+
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-bottom: 15px;
+      display: none;
+    }
+  

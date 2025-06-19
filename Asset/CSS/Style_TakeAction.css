@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/*Header Section*/
+.logo {
+  font-size: 1.8em;
+  font-family: "Brush Script MT", cursive;
+  color: #4f46e5;
+  margin-right: 15px;
+}
+
+header {
+  background-color: #fff;
+  height: 72px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header a {
+  text-decoration: none;
+  color: #6e6d74;
+  padding: 10px;
+  font-size: 17.5px;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #4f46e5;
+}
+#ProfileContainer a span {
+  margin-left: 10px;
+}
+.ri-user-3-line {
+  font-size: 23px;
+}
+.GrayTxt {
+  color: #909091;
+  font-size: 16px;
+}
+/* Header Section End */
+
+/* Nav  Start*/
+aside {
+  position: fixed;
+}
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+li {
+  padding: 10px 0px;
+}
+li span {
+  color: #909091;
+}
+ul a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #8b8988;
+  padding: 10px;
+  font-size: 17.5px;
+  transition: color 0.3s ease;
+}
+
+li:hover a,
+li:hover span {
+  color: #4f46e5;
+}
+#Selected_Page a,
+#Selected_Page span {
+  color: #4f46e5;
+}
+/* nav End */
+
+/* Main Section Start */
+main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 30px;
+}
+#asideSection {
+  padding: 20px 40px;
+}
+#mainContent {
+  margin-right: 50px;
+  padding: 20px 30px;
+  background-color: #fffefbeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.347);
+}
+#ManageUserHeaderTxt {
+  color: #fefefe;
+}
+#ManageUserHeader {
+  background-color: #4f46e5;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#ManageUser_P {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+/* Recent Users section */
+/* Search and Filter Container */
+#Search_bar_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+#Search_bar {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#Search_bar_container button {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Search_bar_container button:hover {
+  background-color: #3730a3;
+}
+
+#genderFilter {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+/*Style the Form Starts*/
+#UpdateformContainer {
+  max-width: 1100px; /* wider container */
+  margin: 10px auto;
+  padding: 30px;
+  border: 2px solid #4f46e5;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px; */
+  background: #e3ebf6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* User Info Card Styles */
+.user-info-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.user-info-card h2 {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 20px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.info-value {
+  color: #6e6d74;
+  text-align: right;
+}
+
+/* Action Grid Styles */
+.action-grid {
+  display: flex;
+  flex-direction: c;
+  align-content: center;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 25px;
+  margin-top: 30px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Action Card */
+.action-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+}
+
+.action-card h4 {
+  margin-bottom: 15px;
+  color: #4f46e5;
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.action-card p {
+  font-size: 15px;
+  color: #6e6d74;
+  margin-bottom: 15px;
+}
+
+/* Select Dropdown */
+.action-card select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.action-card select:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* Buttons */
+.action-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific Button Types */
+.action-btn.ban {
+  background-color: #ef4444;
+}
+
+.action-btn.ban:hover {
+  background-color: #b91c1c;
+}
+
+.action-btn.suspend {
+  background-color: #f59e0b;
+}
+
+.action-btn.suspend:hover {
+  background-color: #b45309;
+}
+
+.action-btn.delete {
+  background-color: #dc2626;
+}
+
+.action-btn.delete:hover {
+  background-color: #991b1b;
+}
+
+/* Make it responsive on smaller screens */
+@media (max-width: 900px) {
+  #UpdateformContainer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+/* Table Styles Ends*/
+/* Error MSG */
+#Search_bar_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+form #ErrorMsg_Update_Form {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 5px;
+}
